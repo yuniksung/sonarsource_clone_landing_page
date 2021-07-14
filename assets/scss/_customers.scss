@@ -1,0 +1,54 @@
+@import './mixin';
+
+.customers{
+    @include defaultPage;
+    
+    .text{
+        width: 35%;
+        @include flexCenter;
+        flex-direction: column;
+
+        h2{
+            padding-top: 70px;
+            color: #2d3032;
+            font-size: 36px;
+            font-weight: 700;
+        }
+
+        p{
+            text-align: center;
+            font-size: 18px;
+            padding-bottom: 6px;
+            font-weight: 400;
+        }
+    }
+
+    .brand-list{
+        padding-bottom: 35px;
+        margin: 30px auto;
+
+        img{
+            margin: 0 15px;
+        }
+    }
+
+    .button{
+        @include flexCenter;
+    
+        a{
+            text-decoration: none;
+            border: 1px solid #c9232c;
+            background-color: transparent;
+            color: #c9232c;
+            display: inline-block;
+            height: 44px;
+            line-height: 44px;
+            padding: 0 20px;
+            border-radius: 4px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            white-space: nowrap;
+        }
+    }
+}
