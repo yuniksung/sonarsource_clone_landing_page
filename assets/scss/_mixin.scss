@@ -9,9 +9,7 @@
 
 @mixin pageContainer{
     width: 100%;
-    min-width: 960px;
-    max-width: 1220px;
-    margin: 0 auto;
+    margin: auto;
 }
 
 @mixin defaultPage{

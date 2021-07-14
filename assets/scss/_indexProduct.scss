@@ -1,17 +1,26 @@
 @import './mixin';
 
 .feature{
-    width: 100%;
+    width: 100vw;
     @include flexCenter;
     flex-direction: column;
     line-height: 1.5;
     padding: 100px 0;
+
+    @include media("<=320px"){
+        padding: 50px 0;
+     } 
 
     .feature-text{
         width: 100%;
         @include flexCenter;
         flex-direction: column;
         // padding-top: 70px;
+
+        @include media("<=320px"){
+            width: 80%;
+            padding: 50px 0 25px;
+         } 
 
         h2{
             padding-top: 70px;
@@ -35,6 +44,12 @@
         @include flexCenter;
         padding-top: 45px;
 
+        
+        @include media("<=320px"){
+            flex-wrap: wrap;
+            padding-top: 5px
+         } 
+
         .index-product{
             width: 270px;
             padding: 0 30px;
@@ -42,6 +57,9 @@
             text-align: left;
 
 
+            @include media("<=320px"){
+                padding: 30px;
+             } 
 
             .ide{
                 margin-top: 12px;

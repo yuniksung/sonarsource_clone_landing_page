@@ -3,50 +3,76 @@
 
 
 .hero{
-    height: 408px;
-    width: 100%;
+    height: 50%;
+    width: 100vw;
     background-color: #202122;
-    display: -webkit-flex;
     display: flex;
-    -webkit-flex-direction: column;
     flex-direction: column;
-    -webkit-align-items: center;
     align-items: center;
     margin: 0 auto;
+
+    @include media("<=320px"){
+        height: 35%;
+    } 
 
     .hero-text{
         @include pageContainer;
 
-
+        @include media("<=320px"){
+            width: 100%;
+            margin: 100px auto 30px;
+         } 
         .jumbo-text{
             display: flex;
-            -webkit-flex-direction: column;
             flex-direction: column;
-            -webkit-align-items: center;
             align-items: center;
-            -webkit-justify-content: space-between;
             justify-content: space-between;
             padding-top: 70px;
-            padding-bottom: 120px;
+            padding-bottom: 50px;
             width: 100%;
+        
+
+            @include media("<=320px"){
+                padding-top: 10px;
+                padding-bottom: 30px;
+                width: 100%;
+                height: 100%;
+             } 
             
 
             h2{
-                line-height: 80px !important;
-                margin-bottom: 0 !important;
-                font-size: 32px !important;
+                line-height: 80px ;
+                margin-bottom: 0 ;
+                font-size: 32px ;
                 font-weight: 400;
                 color: #ffffff;
+
+                @include media("<=320px"){
+                    line-height: 30px ;
+                    font-size: 15px ;
+                    padding: 0 10px;
+                    text-align: center;
+                    width: 100%;
+                 } 
             }
     
             h1{
-                line-height: 60px !important;
-                margin-bottom: 0 !important;
-                font-size: 66px !important;
+                line-height: 60px ;
+                margin-bottom: 0 ;
+                font-size: 66px ;
                 color: #e03734;
                 text-align: center;
                 font-weight: 900;
                 width: 100%;
+
+                @include media("<=320px"){
+                    width: 95%;
+                    line-height: 120%;
+                    font-weight: 700;
+                    font-size: 20px;
+                    padding: 10px 10px 0;
+                    text-align: center;
+                 } 
             }
         }
 
@@ -54,41 +80,165 @@
     }
 
     .hero-bottom-links{
-        height: 80px;
-        color: #cfd3d7;
-        font-size: 21px;
+        
+        height: 100%;
+        font-size: 14px;
+        margin-bottom: 5px;
+        z-index: 999;
+
+        @include media("<=320px"){
+            width: 100%;
+            height: 100%;
+            font-size: 14px;
+            margin-bottom: 5px;
+         } 
 
         .page-container{
-            display: -webkit-flex;
             display: flex;
-            -webkit-justify-content: space-between;
             justify-content: space-between;
+            align-items: center;
             height: 100%;
             overflow: hidden;
-            -webkit-align-items: center;
-            align-items: center;
+
             @include pageContainer;
+
+            @include media("<=320px"){
+                align-items: flex-start;
+                overflow: visible;
+             } 
+
+            .dropdown {
+                float: left;
+                overflow: hidden;
+                visibility:hidden;
+               
+                
+
+                @include media("<=320px"){
+                    visibility: visible;
+                    width: 100%;
+                 } 
+
+                 .dropdown-wrapper{
+                     width: 100%;
+                     margin: auto;
+                     @include media("<=320px"){
+
+                        padding: 14px 0;
+                     } 
+
+                     button{
+                        @include flexCenter;
+
+                        @include media("<=320px"){
+                            padding-top: 10px;
+
+                         } 
+
+                        i{
+                            padding-left: 5px;
+                        }
+
+                     }
+
+                     a{
+                         border-bottom: 1px solid rgba(211, 211, 211, 0.65);
+
+                         &:active{
+                             background-color: #cfcfcf;
+                         }
+                     }
+                 }
+                 
+              }
+              
+              .dropdown .dropbtn {
+                font-size: 16px;  
+                border: none;
+                outline: none;
+                color: white;
+                background-color: inherit;
+                font-family: inherit;
+                margin: auto;
+
+
+              }
+
+            //   .dropdown:hover .dropbtn {
+            //     background-color: red;
+            //   }
+              
+            .dropdown-content {
+                width: 60%;
+                visibility:hidden;
+                display: flex;
+                flex-direction: column;
+                background-color: #f9f9f9;
+                min-width: 160px;
+                z-index: 111;
+                margin: auto;
+                margin-top: 10px;
+                border-bottom: 1px solid rgba(211, 211, 211, 0.65);
+
+                &:hover{
+                    visibility: visible;
+                }
+
+                a{
+                    float: none;
+                    color: black;
+                    padding: 12px 16px;
+                    text-decoration: none;
+                    display: inline-block;
+                    text-align: left;
+
+                    &:hover{
+                        background-color: #ddd;
+                    }
+                }
+            }
+            
+            .dropdown:hover .dropdown-content {
+                visibility: visible;
+            }
 
             ul{
                 width: 100%;
                 display: flex;
                 margin-left: -14px;
 
+                @include media("<=320px"){
+                    width: 0%;
+                    visibility:hidden;
+                 } 
+
                 li{
                     list-style: none;
                     display: inline-block;
+                    
 
+                    @include media("<=320px"){
+                        width: 90%;
+                        margin: auto;
+                        display: flex;
+                        flex-wrap: wrap;
+                     } 
 
-                    .btn{
+                    a{
                         text-decoration: none;
-                        color: inherit;
+                        color: #ffffff;
                         font-weight: inherit;
                         font-size: inherit;
                         text-transform: none;
                         border-width: 0;
                         margin-right: 25px;
-                        padding: 0 15px 0 15px;
+                        padding: 0 15px;
                         display: inline-block;
+
+                        @include media("<=320px"){
+                            margin-right: 5px;
+                            padding: 0 5px;
+                         } 
                     }
 
                     svg{
@@ -96,6 +246,10 @@
                         width: 15px;
                         vertical-align: middle;
                         fill: #cfd3d7;
+
+                        @include media("<=320px"){
+                            display: none;
+                         } 
                     }
                 }
             }
