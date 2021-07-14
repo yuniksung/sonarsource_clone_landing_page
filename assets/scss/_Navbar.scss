@@ -1,8 +1,95 @@
-.navbar{
+@import './mixin';
+
+.menu-header{
     position: relative;
     width: 100%;
     z-index: 100;
     border-top: 5px solid #e03734;
     background-color: #202121;
     transition: all 0.5s ease;
-}
+
+    .page-header{
+        
+
+        .page-container{
+            padding: 12px 12px 0 12px;
+            height: 82px;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-align-items: center;
+            align-items: center;
+            min-width: 1090px;
+            position: static;
+            margin: auto;
+            @include pageContainer;
+
+            .logo{
+                height: 60px;
+                padding-right: 10px;
+                width: 200px;
+
+                &:hover{
+                    opacity: 0;
+                    visibility: hidden;
+                    transition: all 0.5s ease;
+                    display: none;
+                }
+            }
+
+                .page-header-nav{
+                    display: flex;
+                    list-style: none;
+                    align-items: center;
+
+                    li{
+                        line-height: 1;
+                        border: none;
+                        background: none;
+                        font-family: inherit;
+                        font-size: inherit;
+                        -webkit-appearance: none;
+                        padding: 0 18px;
+                        margin-left: 10px;
+                        position: relative;
+                        color: #fff;
+                        font-weight: 500;
+                    }
+
+                    &::after{
+                        display: table;
+                        content: '';
+                        line-height: 0;
+                        clear: both;
+                    }
+
+                }
+
+                .container-header-cta{
+                    display: inline-block;
+                    text-align: right;
+                    height: auto;
+                    width: calc(100% - 712px);
+                    padding: 0px 0 8px 0;
+                    margin-top: -5px;
+                
+                    .btn{
+                        text-decoration: none;
+                        border: none;
+                        background-color: #c9232c;
+                        color: #fff !important;
+                        text-shadow: 0 0 1px rgba(0, 0, 0,  0.35);
+                        height: 32px;
+                        line-height: 32px;
+                        padding: 0 10px;
+                        font-size: 16px;
+                        font-weight: normal !important;
+                        cursor: pointer;
+                        white-space: nowrap;
+                        border-radius: 4px;
+                        display: inline-block;
+
+                    }
+                }
+            }
+        }
+    }

@@ -1,0 +1,42 @@
+// page container's default width
+
+// display flex and all center
+@mixin flexCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin pageContainer{
+    width: 100%;
+    min-width: 960px;
+    max-width: 1220px;
+    margin: 0 auto;
+}
+
+@mixin defaultPage{
+    width: 100%;
+    line-height: 1.5;
+    @include flexCenter;
+    flex-direction: column;
+}
+
+@mixin pageContent{
+    -webkit-flex: 1 0 auto;
+    flex: 1 0 auto;
+    line-height: 1.5;
+    overflow: hidden;
+}
+
+@mixin btn{
+    display: inline-block;
+    height: 44px;
+    line-height: 44px;
+    padding: 0 20px;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+    text-decoration: none;
+}

@@ -1,0 +1,88 @@
+@import './mixin';
+
+.index-plan{
+    background-color: #f9f9fb;
+    padding-top: 22px;
+    padding-bottom: 50px;
+    @include defaultPage;
+
+    h2{
+        padding-top: 44px;
+        color: #2d3032;
+        font-size: 36px;
+        font-weight: 700;
+    }
+
+    p{
+        text-align: center;
+        font-size: 18px;
+        padding-bottom: 6px;
+        font-weight: 400;
+    }
+
+    section{
+        display: -webkit-flex;
+        display: flex;
+        -webkit-justify-content: center;
+        justify-content: center;
+        margin-top: 22px;
+
+        article{
+            -webkit-flex-shrink: 0;
+            flex-shrink: 0;
+            -webkit-flex-grow: 0;
+            flex-grow: 0;
+            -webkit-flex-basis: 270px;
+            flex-basis: 270px;
+            padding: 22px 0;
+            text-align: center;
+            font-weight: 300;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-direction: column;
+            flex-direction: column;
+            -webkit-justify-content: space-between;
+            justify-content: space-between;
+            font-size: 16px;
+            line-height: 22px;
+
+            img{
+                display: block;
+                padding: 11px auto;
+                height: 38px;
+                width: 100%;
+            }
+
+            h2{
+                padding-top: 0px;
+                margin-top: 22px;
+                color: #2d3032;
+                font-size: 26px;
+                font-weight: 700;
+                line-height: 32px;
+            }
+
+            span{
+                text-transform: uppercase;
+                color: #8a8c8f;
+                font-weight: 700;
+                font-size: 14px;
+                letter-spacing: 4px;
+                padding-bottom: 18px;
+            }
+
+
+        }
+
+    }
+
+    a{
+        display: table;
+        margin: 33px auto;
+        border: none;
+        background-color: #c9232c;
+        color: #fff !important;
+        text-shadow: 0 0 1px rgba(0, 0, 0, 0.35);
+        @include btn;
+    }
+}

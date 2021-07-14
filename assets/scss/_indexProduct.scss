@@ -1,0 +1,117 @@
+@import './mixin';
+
+.feature{
+    width: 100%;
+    @include flexCenter;
+    flex-direction: column;
+    line-height: 1.5;
+    padding: 100px 0;
+
+    .feature-text{
+        width: 100%;
+        @include flexCenter;
+        flex-direction: column;
+        // padding-top: 70px;
+
+        h2{
+            padding-top: 70px;
+            color: #2d3032;
+            font-size: 36px;
+            font-weight: 700;
+        }
+
+        p{
+            font-weight: 400;
+            text-align: center;
+            font-size: 18px;
+            padding-bottom: 6px;
+        }
+    }
+
+    .product-list{
+        width: 100%;
+        box-sizing: content-box;
+        text-align: left;
+        @include flexCenter;
+        padding-top: 45px;
+
+        .index-product{
+            width: 270px;
+            padding: 0 30px;
+            box-sizing: content-box;
+            text-align: left;
+
+
+
+            .ide{
+                margin-top: 12px;
+    
+                .ide-badge,
+                .cloud-badge,
+                .qube-badge{
+                    display: inline-block;
+                    line-height: 1;
+                    padding: 5px 8px 4px;
+                    border-radius: 2px;
+                    color: #fff;
+                    font-size: 15px;
+                    font-weight: 500;
+                    letter-spacing: 0.03em;
+                    text-transform: uppercase;
+                }
+                .ide-badge{
+                    background-color: #c9232c;
+                }
+
+                .cloud-badge{
+                    background-color: #fd6a00;
+                }
+
+                .qube-badge{
+                    background-color: #4c9bd6;
+                }
+            }
+    
+            img{
+                max-width: 100%;
+                width: 240px;
+                height: 60px;
+            }
+
+            p{
+                font-weight: 400;
+                height: 42px;
+                margin-top: 12px;
+                line-height: 21px;
+                font-size: 16px;
+            }
+
+            .product-link{
+                margin-top: 24px;
+
+                a{
+                    display: -webkit-inline-flex;
+                    display: inline-flex;
+                    -webkit-align-items: center;
+                    align-items: center;
+                    color: #c9232c;
+                    font-size: 18px;
+                    font-weight: 500;
+                    text-decoration: none;
+                    transition: color 0.1s ease-in;
+
+                    svg{
+                        width: 24px;
+                        height: 24px;
+                        margin-left: 4px;
+                        fill: #c9232c;
+                    }
+                }
+            }
+        }
+
+        
+
+
+    }
+}
