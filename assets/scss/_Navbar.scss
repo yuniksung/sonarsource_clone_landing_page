@@ -24,6 +24,10 @@
         width: 95%;
     }
 
+    @include media("<=375px"){
+        width: 95%;
+    }
+
         .page-container{
             padding: 12px 12px 0 12px;
             display: flex;

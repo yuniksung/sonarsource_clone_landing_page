@@ -27,6 +27,12 @@
   }
 }
 
+@media (max-width: 375px) {
+  .menu-header .page-header {
+    width: 95%;
+  }
+}
+
 .menu-header .page-header .page-container {
   padding: 12px 12px 0 12px;
   display: flex;
