@@ -11,6 +11,10 @@
         padding: 50px 0;
      } 
 
+     @include media("<=768px"){
+        padding: 20px 0;
+    } 
+
     .feature-text{
         width: 100%;
         @include flexCenter;
@@ -21,6 +25,11 @@
             width: 80%;
             padding: 50px 0 25px;
          } 
+
+         @include media("<=768px"){
+            width: 80%;
+            margin: auto;
+        } 
 
         h1{
             padding-top: 70px;
@@ -50,6 +59,12 @@
             padding-top: 5px
          } 
 
+         @include media("<=768px"){
+            width: 90%;
+            margin: auto;
+            align-items: flex-start;
+        } 
+
         .index-product{
             width: 270px;
             padding: 0 30px;
@@ -60,6 +75,10 @@
             @include media("<=375px"){
                 padding: 30px;
              } 
+
+             @include media("<=768px"){
+                padding: 20px;
+            } 
 
             .ide{
                 margin-top: 12px;

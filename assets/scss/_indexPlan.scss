@@ -18,6 +18,12 @@
             text-align: center;
             padding-bottom: 16px;
          } 
+
+         @include media("<=768px"){
+            width: 90%;
+            text-align: center;
+            padding-bottom: 16px;
+        } 
     }
 
     p{
@@ -61,6 +67,10 @@
                 width: 95%;
              } 
 
+             @include media("<=768px"){
+                padding: 0 10px
+            } 
+
             .article-top{
                 @include flexCenter;
                 flex-direction:column;
@@ -82,6 +92,7 @@
                         width: 10%;
                         height: 40px;
                     } 
+                    
                 }
                 
                
@@ -97,6 +108,7 @@
                         width: 80%;
                     } 
 
+
                     h2{
                         margin-top: 22px;
                         color: #2d3032;
@@ -106,6 +118,11 @@
                         text-align: center;
     
                         @include media("<=375px"){
+                            margin-top: 12px;
+                        } 
+
+                        
+                        @include media("<=768px"){
                             margin-top: 12px;
                         } 
     
@@ -119,6 +136,10 @@
                         letter-spacing: 4px;
                         padding-bottom: 18px;
                         text-align: center;
+
+                        @include media("<=768px"){
+                            font-size: 12px;
+                        } 
                     }
     
                 }
@@ -135,6 +156,11 @@
                 @include media("<=375px"){
                     line-height: 22px;
                  } 
+
+                 @include media("<=768px"){
+                    line-height: 100%;
+                    font-size: 14px;
+                } 
             }
         }
 
@@ -146,9 +172,14 @@
         background-color: #c9232c;
         color: #fff !important;
         text-shadow: 0 0 1px rgba(0, 0, 0, 0.35);
-        @include btn;
+        padding: 5px 20px;
+        border-radius: 4px;
+        font-size: 18px;
+        font-weight: 600;
+        text-decoration: none;
 
-        @include media("<=375px"){
-         } 
+        @include media("<=768px"){
+            margin: 30px auto;
+        } 
     }
 }

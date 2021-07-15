@@ -15,6 +15,10 @@
         height: 35%;
     } 
 
+    @include media("<=768px"){
+        height: 40%;
+    } 
+
     .hero-text{
         @include pageContainer;
         height: 80%;
@@ -23,6 +27,11 @@
             width: 100%;
             margin: 100px auto 30px;
          } 
+
+         @include media("<=768px"){
+            height: 100%;
+            margin: auto;
+        } 
 
         .jumbo-text{
             display: flex;
@@ -40,6 +49,8 @@
                 width: 100%;
                 height: 100%;
              } 
+
+
             
 
             h2{
@@ -56,6 +67,13 @@
                     text-align: center;
                     width: 100%;
                  } 
+
+                 @include media("<=768px"){
+                    line-height: 100% ;
+                    text-align: center;
+                    font-size: 24px ;
+                    margin-bottom: 20px;
+                } 
             }
     
             h1{
@@ -75,6 +93,12 @@
                     padding: 10px 10px 0;
                     text-align: center;
                  } 
+
+                 @include media("<=768px"){
+                    line-height: 110% ;
+                    font-size: 46px ;
+                    width: 100%;
+                } 
             }
         }
 
@@ -108,6 +132,10 @@
                 overflow: visible;
              } 
 
+             @include media("<=768px"){
+                width: 90%;
+            } 
+
             .dropdown {
                 height: 100%;
                 float: left;
@@ -117,6 +145,10 @@
                     visibility: visible;
                     width: 100%;
                  } 
+
+                 @include media("<=768px"){
+                    width: 0;
+                } 
 
                  .dropdown-wrapper{
                      width: 100%;
@@ -203,7 +235,7 @@
 
             ul{
                 width: 100%;
-                display: flex;
+                @include flexCenter;
                 margin-left: -14px;
 
                 @include media("<=375px"){
@@ -211,10 +243,14 @@
                     visibility:hidden;
                  } 
 
+                 @include media("<=768px"){
+                    margin-left: 0;
+                    align-items: center;
+                    width: 77%;
+                } 
+
                 li{
-                    list-style: none;
-                    display: inline-block;
-                    
+                    list-style: none;                   
 
                     @include media("<=375px"){
                         width: 90%;
@@ -222,6 +258,11 @@
                         display: flex;
                         flex-wrap: wrap;
                      } 
+
+                     @include media("<=768px"){
+                        width: 12%;
+                        align-items: center;
+                    } 
 
                     a{
                         text-decoration: none;
@@ -232,23 +273,35 @@
                         border-width: 0;
                         margin-right: 25px;
                         padding: 0 15px;
-                        display: inline-block;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
 
                         @include media("<=375px"){
                             margin-right: 5px;
                             padding: 0 5px;
                          } 
+
+                         
+                        @include media("<=768px"){
+                            width: 10%;
+                        } 
                     }
 
                     svg{
                         height: 15px;
                         width: 15px;
-                        vertical-align: middle;
+                        margin: 0 3px;
                         fill: #cfd3d7;
 
                         @include media("<=375px"){
                             display: none;
                          } 
+
+                         
+                     @include media("<=768px"){
+                        display: none;
+                    } 
                     }
                 }
             }
@@ -259,11 +312,16 @@
                 border-radius: 5px 5px 0 0;
                 display: -webkit-flex;
                 display: flex;
-                -webkit-flex-direction: row;
-                flex-direction: row;
                 color: #434447;
                 margin-right: 25px;
                 margin-top: 10px;
+
+                @include media("<=768px"){
+                    margin-right: 0;
+                    width: 22%;
+                    align-items: center;
+                    justify-content: center;
+                } 
                 
 
                 strong{

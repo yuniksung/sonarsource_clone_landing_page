@@ -14,6 +14,10 @@
         height: 62px;
     }
 
+    @include media("<=768px"){
+        height: 62px;
+    }
+
     .page-header{
         height: 100%;
         width: 60%;
@@ -24,7 +28,7 @@
         width: 95%;
     }
 
-    @include media("<=375px"){
+    @include media("<=768px"){
         width: 95%;
     }
 
@@ -32,7 +36,6 @@
             padding: 12px 12px 0 12px;
             display: flex;
             align-items: center;
-            position: static;
             margin: auto;
             @include pageContainer;
 
@@ -41,15 +44,25 @@
                 flex-direction: column;
             } 
 
+            @include media("<=768px"){
+                padding: 12px 10px 0 0;
+            }
+
             .logo{
                 height: 60px;
                 padding-right: 10px;
                 width: 200px;
                 @include media("<=375px"){
                     @include flexCenter;
-                    width: 100%;
+                    width: 200px;
                     padding-right: 0;
                     height: 30%;
+                 } 
+
+                 @include media("<=768px"){
+                    padding-right: 0;
+                    height: 30%;
+                    width: 140px;
                  } 
 
                 img{
@@ -57,6 +70,7 @@
                         height: 50px;
                         width: 150px;
                      } 
+
                 }
             }
 
@@ -72,12 +86,14 @@
                      } 
 
 
+                     @include media("<=768px"){
+
+                     } 
 
                     li{
                         line-height: 1;
                         border: none;
                         background: none;
-                        -webkit-appearance: none;
                         padding: 0 18px;
                         margin-left: 10px;
                         position: relative;
@@ -90,6 +106,10 @@
                             margin-left: 0px;
                             font-size: 14px;
                          } 
+
+                         @include media("<=768px"){
+                            padding: 3px 10px;
+                        } 
 
                         svg{
                             @include media("<=375px"){
@@ -122,6 +142,10 @@
                         padding:0;
                         font-size: 12px;
                      } 
+
+                     @include media("<=768px"){
+                        margin-top: 0;
+                    } 
                 
                     a{
                         text-decoration: none;
@@ -129,9 +153,9 @@
                         background-color: #c9232c;
                         color: #fff !important;
                         text-shadow: 0 0 1px rgba(0, 0, 0,  0.35);
-                        height: 32px;
-                        line-height: 32px;
-                        padding: 0 10px;
+                        // height: 32px;
+                        // line-height: 32px;
+                        padding: 8px 10px;
                         font-size: 16px;
                         font-weight: normal !important;
                         cursor: pointer;
@@ -140,8 +164,11 @@
                         display: inline-block;
 
                         @include media("<=375px"){
-                            height: 32px;
                             font-size: 14px;
+                        } 
+
+                        @include media("<=768px"){
+                            padding: 4px 6px;
                         } 
 
                     }
