@@ -8,26 +8,39 @@
         @include flexCenter;
         flex-direction: column;
 
+        
+        @include media("<=1024px"){
+            width: 85%;
+        } 
+
+        @include media("<=768px"){
+            width: 95%;
+        } 
+
         @include media("<=375px"){
             width: 95%;
          }  
 
-         @include media("<=768px"){
-            width: 95%;
-        } 
+
 
         h2{
             padding-top: 70px;
             color: #2d3032;
             font-size: 36px;
             font-weight: 700;
+
+            @include media("<=1024px"){
+                padding: 70px 0 50px;
+            } 
+
+            
+            @include media("<=768px"){
+                padding: 70px 0 40px;
+            } 
             @include media("<=375px"){
                 text-align: center;
              } 
 
-             @include media("<=768px"){
-                padding: 70px 0 40px;
-            } 
         }
 
         p{
@@ -36,13 +49,19 @@
             padding-bottom: 6px;
             font-weight: 400;
 
+            @include media("<=1024px"){
+                width: 75%;
+            } 
+
+            @include media("<=768px"){
+                width: 85%;
+            } 
+
             @include media("<=375px"){
                 width: 85%;
              } 
 
-             @include media("<=768px"){
-                width: 85%;
-            } 
+
         }
     }
 

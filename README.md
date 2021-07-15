@@ -3,6 +3,10 @@ This is a cloned website from `sonarsource.com`.
 
 This page is not deployed.
 
+## Technology used
+- HTML
+- SASS
+
 ## Accomplished
 - Responsiveness (mobile friendly)
 Media-query has been added to: 
@@ -16,9 +20,18 @@ The website has used Bootstrap for styling but I needed to change it to SASS to 
 - HTML structure has been modified
 To make easy and smooth responsiveness, I've restructured elements.
 
-## Technology used
-- HTML
-- SASS
+## Screenshot
+### 1920px
+![](/assets/images/320px.jpg)
+
+### 1024px
+![](/assets/images/320px.jpg)
+
+### 768px
+![](/assets/images/320px.jpg)
+
+### 320 ~ 375px
+![](/assets/images/320px.jpg)
 
 ## Contributer
 Yunik Sung
