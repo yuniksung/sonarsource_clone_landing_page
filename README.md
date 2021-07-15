@@ -26,13 +26,13 @@ To make easy and smooth responsiveness, I've restructured elements.
 ![](/assets/images/myscreensize.jpg)
 
 ### 1024px
-![](/assets/images/320px.jpg)
+![](/assets/images/1024px.jpg)
 
 ### 768px
 ![](/assets/images/768px.jpg)
 
 ### 320 ~ 375px
-![](/assets/images/1024px.jpg)
+![](/assets/images/320.jpg)
 
 ## Contributer
 Yunik Sung
