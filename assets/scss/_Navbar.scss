@@ -10,7 +10,7 @@
     transition: all 0.5s ease;
     height: 82px;
 
-    @include media("<=320px"){
+    @include media("<=375px"){
         height: 62px;
     }
 
@@ -20,7 +20,7 @@
         margin: auto;
 
         
-    @include media("<=320px"){
+    @include media("<=375px"){
         width: 95%;
     }
 
@@ -32,7 +32,7 @@
             margin: auto;
             @include pageContainer;
 
-            @include media("<=320px"){
+            @include media("<=375px"){
                 @include flexCenter;
                 flex-direction: column;
             } 
@@ -41,7 +41,7 @@
                 height: 60px;
                 padding-right: 10px;
                 width: 200px;
-                @include media("<=320px"){
+                @include media("<=375px"){
                     @include flexCenter;
                     width: 100%;
                     padding-right: 0;
@@ -49,7 +49,7 @@
                  } 
 
                 img{
-                    @include media("<=320px"){
+                    @include media("<=375px"){
                         height: 50px;
                         width: 150px;
                      } 
@@ -61,7 +61,7 @@
                     list-style: none;
                     align-items: center;
 
-                    @include media("<=320px"){
+                    @include media("<=375px"){
                         justify-content: space-around;
                         width: 100%;
                         height: 30%;
@@ -80,7 +80,7 @@
                         color: #fff;
                         font-weight: 500;
 
-                        @include media("<=320px"){
+                        @include media("<=375px"){
                             padding: 5px 5px;
                             width: 30%;
                             margin-left: 0px;
@@ -88,7 +88,7 @@
                          } 
 
                         svg{
-                            @include media("<=320px"){
+                            @include media("<=375px"){
                                 display: none;
                              } 
                          }
@@ -111,7 +111,7 @@
                     padding: 0px 0 8px;
                     margin-top: -5px;
 
-                    @include media("<=320px"){
+                    @include media("<=375px"){
                         text-align: center;
                         width: 150px;
                         margin-top: 20px;
@@ -135,7 +135,7 @@
                         border-radius: 4px;
                         display: inline-block;
 
-                        @include media("<=320px"){
+                        @include media("<=375px"){
                             height: 32px;
                             font-size: 14px;
                         } 
