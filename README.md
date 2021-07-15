@@ -2,8 +2,8 @@
 This is a cloned website from `sonarsource.com`.
 
 
-Deployed Application: https://yuniksung.github.io/sonarsource_clone_landing_page/
-Github Repository: https://github.com/yuniksung/sonarsource_clone_landing_page
+- Deployed Application: https://yuniksung.github.io/sonarsource_clone_landing_page/
+- Github Repository: https://github.com/yuniksung/sonarsource_clone_landing_page
 
 ## Technology used
 - HTML
