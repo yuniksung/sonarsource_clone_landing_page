@@ -8,30 +8,31 @@ This page is not deployed.
 - SASS
 
 ## Accomplished
-- Responsiveness (mobile friendly)
+### Responsiveness (mobile friendly)
+
 Media-query has been added to: 
--- 320px ~ 375px: Small to medium mobile screen size
--- 768px : Tablet screen size
--- 1024px : Laptop screen size 
+- 320px ~ 375px: Small to medium mobile screen size
+- 768px : Tablet screen size
+- 1024px : Laptop screen size 
 
 - Changed bootstrap to SASS.
-The website has used Bootstrap for styling but I needed to change it to SASS to able to add smooth responsiveness.
+The website has used Bootstrap for styling but I needed to change it to SASS to be able to add smooth responsiveness.
 
 - HTML structure has been modified
 To make easy and smooth responsiveness, I've restructured elements.
 
 ## Screenshot
 ### 1920px
-![](/assets/images/320px.jpg)
+![](/assets/images/myscreensize.jpg)
 
 ### 1024px
 ![](/assets/images/320px.jpg)
 
 ### 768px
-![](/assets/images/320px.jpg)
+![](/assets/images/768px.jpg)
 
 ### 320 ~ 375px
-![](/assets/images/320px.jpg)
+![](/assets/images/1024px.jpg)
 
 ## Contributer
 Yunik Sung
