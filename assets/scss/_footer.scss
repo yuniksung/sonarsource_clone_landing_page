@@ -17,10 +17,13 @@ footer{
         align-items: flex-start;
         padding: 10px 0;
 
+        @include media("<=320px"){
+            width: 95%;
+         } 
+
         .sns-link{
-            -webkit-flex: 0 0 33.3333333333%;
-            flex: 0 0 33.3333333333%;
-            max-width: 33.3333333333%;
+            width: 10%;
+            @include flexCenter;
             display: inline-block;
             margin-top: -13px;
             margin-bottom: 16px;
@@ -31,71 +34,68 @@ footer{
             }
 
             span{
-                display: inline-block;
-                margin-top: -13px;
-                margin-bottom: 16px;
+                width: 100%;
+                @include flexCenter;
+
                 
                 a{
                     color: rgba(138, 140, 143, 0.7);
-                    margin-right: 4px;
+                    padding: 10px;
                 }
-                &::before{
-                    content: '';
-                    display: inline-block;
-                    width: 1px;
-                    height: 22px;
-                    margin-left: 16px;
-                    margin-right: 16px;
-                    background-color: #ffffff;
-                    opacity: 0.1;
-                }
+
             }
         }
 
-        .footer-content{
-            -webkit-flex: 0 0 16.6666666667%;
-            flex: 0 0 16.6666666667%;
-            max-width: 16.6666666667%;
+        .contents{
+            width: 70%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
 
-            h4{
-                font-size: 18px;
-                line-height: 26px;
-                font-weight: 700;
-                color: #ffffff;
-                margin-bottom: 16px;
-            }
-
-            ul{
-                display: -webkit-flex;
-                display: flex;
-                -webkit-flex-direction: column;
-                flex-direction: column;
-                -webkit-align-items: flex-start;
-                align-items: flex-start;
-                list-style: none;
-                
-
-                li{
-                    position: relative;
-                    display: inline-block;
-                    padding: 0 4px;
-                    margin: 0 -4px 8px;
-
-                    a{
-
-                        text-decoration: none;
+            .footer-content{
+                padding: 0 30px;
+    
+                h4{
+                    font-size: 18px;
+                    line-height: 26px;
+                    font-weight: 700;
+                    color: #ffffff;
+                    margin-bottom: 16px;
+                }
+    
+                ul{
+                    display: -webkit-flex;
+                    display: flex;
+                    -webkit-flex-direction: column;
+                    flex-direction: column;
+                    -webkit-align-items: flex-start;
+                    align-items: flex-start;
+                    list-style: none;
+                    
+    
+                    li{
                         position: relative;
-                        color: rgba(255, 255, 255, 0.6);
-                        font-size: 14px;
-                        line-height: 24px;
-                        font-weight: 400;
-                        z-index: 10;
-                        border-bottom: none;
-                        transition: all 0.2s ease 0s;
+                        display: inline-block;
+                        padding: 0 4px;
+                        margin: 0 -4px 8px;
+    
+                        a{
+    
+                            text-decoration: none;
+                            position: relative;
+                            color: rgba(255, 255, 255, 0.6);
+                            font-size: 14px;
+                            line-height: 24px;
+                            font-weight: 400;
+                            z-index: 10;
+                            border-bottom: none;
+                            transition: all 0.2s ease 0s;
+                        }
                     }
                 }
             }
         }
+
     }
 
     .license{

@@ -7,7 +7,7 @@
     padding-bottom: 50px;
     @include defaultPage;
 
-    h2{
+    .plan-header{
         padding-top: 44px;
         color: #2d3032;
         font-size: 36px;
@@ -15,6 +15,8 @@
 
         @include media("<=320px"){
             width: 90%;
+            text-align: center;
+            padding-bottom: 16px;
          } 
     }
 
@@ -25,7 +27,8 @@
         font-weight: 400;
         
         @include media("<=320px"){
-            width: 90%;
+            width: 100%;
+            padding-bottom: 0;
          } 
     }
 
@@ -51,45 +54,101 @@
             font-size: 16px;
             line-height: 22px;
 
+            @include media("<=320px"){
+                padding: 13px 26px;
+                font-weight: 300;
+                line-height: 12px;
+                width: 95%;
+             } 
 
+            .article-top{
+                @include flexCenter;
+                flex-direction:column;
 
-            img{
-                display: block;
-                padding: 11px auto;
-                height: 38px;
-                width: 100%;
+                @include media("<=320px"){
+                    flex-direction:row;
+                    width: 100%;
+                    justify-content: flex-start;
+                 } 
+
+                img{
+                    display: block;
+                    padding: 11px auto;
+                    height: 38px;
+                    width: 100%;
+                    text-align: center;
+
+                    @include media("<=320px"){
+                        width: 10%;
+                        height: 40px;
+                    } 
+                }
+                
+               
+                .article-title{
+                    @include flexCenter;
+                    flex-direction:column;
+
+                    @include media("<=320px"){
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                        width: 80%;
+                    } 
+
+                    h2{
+                        margin-top: 22px;
+                        color: #2d3032;
+                        font-size: 26px;
+                        font-weight: 700;
+                        line-height: 32px;
+                        text-align: center;
+    
+                        @include media("<=320px"){
+                            margin-top: 12px;
+                        } 
+    
+                    }
+    
+                    span{
+                        text-transform: uppercase;
+                        color: #8a8c8f;
+                        font-weight: 700;
+                        font-size: 14px;
+                        letter-spacing: 4px;
+                        padding-bottom: 18px;
+                        text-align: center;
+                    }
+    
+                }
             }
 
-            h2{
-                padding-top: 0px;
-                margin-top: 22px;
-                color: #2d3032;
-                font-size: 26px;
-                font-weight: 700;
-                line-height: 32px;
+
+
+
+
+
+
+            p{
+
+                @include media("<=320px"){
+                    line-height: 22px;
+                 } 
             }
-
-            span{
-                text-transform: uppercase;
-                color: #8a8c8f;
-                font-weight: 700;
-                font-size: 14px;
-                letter-spacing: 4px;
-                padding-bottom: 18px;
-            }
-
-
         }
 
     }
 
     a{
-        display: table;
         margin: 33px auto;
         border: none;
         background-color: #c9232c;
         color: #fff !important;
         text-shadow: 0 0 1px rgba(0, 0, 0, 0.35);
         @include btn;
+
+        @include media("<=320px"){
+         } 
     }
 }

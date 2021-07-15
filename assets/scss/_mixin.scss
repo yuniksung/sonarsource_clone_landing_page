@@ -27,14 +27,11 @@
 }
 
 @mixin btn{
-    display: inline-block;
     height: 44px;
     line-height: 44px;
     padding: 0 20px;
     border-radius: 4px;
     font-size: 18px;
     font-weight: 600;
-    cursor: pointer;
-    white-space: nowrap;
     text-decoration: none;
 }
