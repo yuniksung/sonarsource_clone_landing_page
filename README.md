@@ -1,7 +1,9 @@
 # SonarSource Cloned Website
 This is a cloned website from `sonarsource.com`.
 
-This page is not deployed.
+
+Deployed Application: https://yuniksung.github.io/sonarsource_clone_landing_page/
+Github Repository: https://github.com/yuniksung/sonarsource_clone_landing_page
 
 ## Technology used
 - HTML
