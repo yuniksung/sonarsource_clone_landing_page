@@ -13,7 +13,7 @@
         font-size: 36px;
         font-weight: 700;
 
-        @include media("<=320px"){
+        @include media("<=375px"){
             width: 90%;
             text-align: center;
             padding-bottom: 16px;
@@ -26,7 +26,7 @@
         padding-bottom: 6px;
         font-weight: 400;
         
-        @include media("<=320px"){
+        @include media("<=375px"){
             width: 100%;
             padding-bottom: 0;
          } 
@@ -39,7 +39,7 @@
         justify-content: center;
         margin-top: 22px;
 
-        @include media("<=320px"){
+        @include media("<=375px"){
             width: 90%;
             flex-wrap: wrap;
          } 
@@ -54,7 +54,7 @@
             font-size: 16px;
             line-height: 22px;
 
-            @include media("<=320px"){
+            @include media("<=375px"){
                 padding: 13px 26px;
                 font-weight: 300;
                 line-height: 12px;
@@ -65,7 +65,7 @@
                 @include flexCenter;
                 flex-direction:column;
 
-                @include media("<=320px"){
+                @include media("<=375px"){
                     flex-direction:row;
                     width: 100%;
                     justify-content: flex-start;
@@ -78,7 +78,7 @@
                     width: 100%;
                     text-align: center;
 
-                    @include media("<=320px"){
+                    @include media("<=375px"){
                         width: 10%;
                         height: 40px;
                     } 
@@ -89,7 +89,7 @@
                     @include flexCenter;
                     flex-direction:column;
 
-                    @include media("<=320px"){
+                    @include media("<=375px"){
                         display: flex;
                         justify-content: center;
                         align-items: center;
@@ -105,7 +105,7 @@
                         line-height: 32px;
                         text-align: center;
     
-                        @include media("<=320px"){
+                        @include media("<=375px"){
                             margin-top: 12px;
                         } 
     
@@ -132,7 +132,7 @@
 
             p{
 
-                @include media("<=320px"){
+                @include media("<=375px"){
                     line-height: 22px;
                  } 
             }
@@ -148,7 +148,7 @@
         text-shadow: 0 0 1px rgba(0, 0, 0, 0.35);
         @include btn;
 
-        @include media("<=320px"){
+        @include media("<=375px"){
          } 
     }
 }

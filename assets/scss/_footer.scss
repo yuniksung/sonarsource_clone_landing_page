@@ -8,7 +8,7 @@ footer{
     color: #ffffff;
     background-color: #202122;
     
-    @include media("<=320px"){
+    @include media("<=375px"){
         height: 80vh;
         overflow: hidden;
      } 
@@ -23,7 +23,7 @@ footer{
         align-items: flex-start;
         padding: 10px 0;
 
-        @include media("<=320px"){
+        @include media("<=375px"){
             width: 95%;
             flex-direction: column;
          } 
@@ -35,7 +35,7 @@ footer{
             margin-top: -13px;
             margin-bottom: 16px;
 
-            @include media("<=320px"){
+            @include media("<=375px"){
                 width: 100%;
                 height: 20%;
                 display: flex;
@@ -66,7 +66,7 @@ footer{
             justify-content: center;
             align-items: flex-start;
 
-            @include media("<=320px"){
+            @include media("<=375px"){
                 width: 100%;
                 height: 80%;
                 flex-wrap: wrap;
@@ -74,7 +74,7 @@ footer{
             .footer-content{
                 padding: 0 30px;
 
-                @include media("<=320px"){
+                @include media("<=375px"){
                     padding: 0 10px;
                     display: flex;
                     flex-direction: column;
@@ -90,7 +90,7 @@ footer{
                     color: #ffffff;
                     margin-bottom: 16px;
 
-                    @include media("<=320px"){
+                    @include media("<=375px"){
                         line-height: 16px;
                         font-size: 14px;
                         margin-bottom: 5px;
@@ -108,7 +108,7 @@ footer{
                         padding: 0 4px;
                         margin: 0 -4px 8px;
 
-                        @include media("<=320px"){
+                        @include media("<=375px"){
                             margin: 0 0 2px;
                             padding: 0;
                          } 
@@ -125,7 +125,7 @@ footer{
                             border-bottom: none;
                             transition: all 0.2s ease 0s;
 
-                            @include media("<=320px"){
+                            @include media("<=375px"){
                                 font-weight: 300;
                                 font-size: 12px;
                                 line-height: 10px;
@@ -144,7 +144,7 @@ footer{
         color:rgba(138, 140, 143, 0.7);
         font-size: 12px;
         text-align: center;
-        @include media("<=320px"){
+        @include media("<=375px"){
          } 
     }
 }

@@ -11,7 +11,7 @@
     align-items: center;
     margin: auto;
 
-    @include media("<=320px"){
+    @include media("<=375px"){
         height: 35%;
     } 
 
@@ -19,7 +19,7 @@
         @include pageContainer;
         height: 80%;
 
-        @include media("<=320px"){
+        @include media("<=375px"){
             width: 100%;
             margin: 100px auto 30px;
          } 
@@ -34,7 +34,7 @@
             width: 100%;
         
 
-            @include media("<=320px"){
+            @include media("<=375px"){
                 padding-top: 10px;
                 padding-bottom: 30px;
                 width: 100%;
@@ -49,7 +49,7 @@
                 font-weight: 400;
                 color: #ffffff;
 
-                @include media("<=320px"){
+                @include media("<=375px"){
                     line-height: 30px ;
                     font-size: 15px ;
                     padding: 0 10px;
@@ -67,7 +67,7 @@
                 font-weight: 900;
                 width: 100%;
 
-                @include media("<=320px"){
+                @include media("<=375px"){
                     width: 95%;
                     line-height: 120%;
                     font-weight: 700;
@@ -88,7 +88,7 @@
         margin-bottom: 5px;
         z-index: 999;
 
-        @include media("<=320px"){
+        @include media("<=375px"){
             width: 100%;
             height: 100%;
             font-size: 14px;
@@ -103,7 +103,7 @@
 
             @include pageContainer;
 
-            @include media("<=320px"){
+            @include media("<=375px"){
                 align-items: flex-start;
                 overflow: visible;
              } 
@@ -116,7 +116,7 @@
                
                 
 
-                @include media("<=320px"){
+                @include media("<=375px"){
                     visibility: visible;
                     width: 100%;
                  } 
@@ -124,7 +124,7 @@
                  .dropdown-wrapper{
                      width: 100%;
                      margin: auto;
-                     @include media("<=320px"){
+                     @include media("<=375px"){
 
                         padding: 14px 0;
                      } 
@@ -132,7 +132,7 @@
                      button{
                         @include flexCenter;
 
-                        @include media("<=320px"){
+                        @include media("<=375px"){
                             padding-top: 10px;
 
                          } 
@@ -209,7 +209,7 @@
                 display: flex;
                 margin-left: -14px;
 
-                @include media("<=320px"){
+                @include media("<=375px"){
                     width: 0%;
                     visibility:hidden;
                  } 
@@ -219,7 +219,7 @@
                     display: inline-block;
                     
 
-                    @include media("<=320px"){
+                    @include media("<=375px"){
                         width: 90%;
                         margin: auto;
                         display: flex;
@@ -237,7 +237,7 @@
                         padding: 0 15px;
                         display: inline-block;
 
-                        @include media("<=320px"){
+                        @include media("<=375px"){
                             margin-right: 5px;
                             padding: 0 5px;
                          } 
@@ -249,7 +249,7 @@
                         vertical-align: middle;
                         fill: #cfd3d7;
 
-                        @include media("<=320px"){
+                        @include media("<=375px"){
                             display: none;
                          } 
                     }
